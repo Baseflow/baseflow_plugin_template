@@ -4,11 +4,31 @@ A template for plugin examples
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+How to use this package:
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Add the dependency in the yaml of the example:
+```
+dependencies:
+  baseflow_plugin_template:
+    git:
+      url: git://github.com/Baseflow/baseflow_plugin_template.git
+      ref: v1.0.0
+```
+Add the assets in the yaml as well:
+
+```
+flutter:
+  assets:
+    - packages/baseflow_plugin_template/logo.png
+    - packages/baseflow_plugin_template/poweredByBaseflow.png
+```
+
+And run the template app:
+```dart
+  runApp(BaseflowPluginExample(
+    pluginName: 'test plugin',
+    githubURL: 'https://github.com/baseflow/baseflow_plugin_template',
+    pubDevURL: 'https://pub.dev/publishers/baseflow.com/packages',
+    pages: [CenteredText.createPage()],
+  ));
+```
