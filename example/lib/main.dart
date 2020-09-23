@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(BaseflowPluginExample(
     pluginName: 'test plugin',
-    githubURL: 'https://github.com/baseflow/', //TODO change when published
+    githubURL: 'https://github.com/baseflow/baseflow_plugin_template',
     pubDevURL: 'https://pub.dev/publishers/baseflow.com/packages',
     pages: [CenteredText.createPage()],
   ));
