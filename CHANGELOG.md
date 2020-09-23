@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [1.0.0] - Initial release
 
-* TODO: Describe initial release.
+* Initial release. Code coming from flutter_cache_manager example
