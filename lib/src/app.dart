@@ -14,12 +14,12 @@ class BaseflowPluginExample extends StatelessWidget {
       createMaterialColor(const Color.fromRGBO(48, 49, 60, 1));
 
   BaseflowPluginExample({
-    Key key,
-    @required this.pluginName,
-    @required String githubURL,
-    @required String pubDevURL,
-    @required this.pages,
-  }) : super(key: key){
+    Key? key,
+    required this.pluginName,
+    required String githubURL,
+    required String pubDevURL,
+    required this.pages,
+  }) : super(key: key) {
     pages.add(InfoPage.createPage(pluginName, githubURL, pubDevURL));
   }
 

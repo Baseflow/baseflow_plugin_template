@@ -4,7 +4,11 @@ import 'package:flutter/material.dart';
 /// A Flutter example demonstrating how the [pluginName] plugin could be used
 class AppHome extends StatefulWidget {
   /// Constructs the [AppHome] class
-  AppHome({Key key, @required this.title, @required this.pages}) : super(key: key);
+  AppHome({
+    Key? key,
+    required this.title,
+    required this.pages,
+  }) : super(key: key);
 
   /// The [title] of the application, which is shown in the application's
   /// title bar.
@@ -29,11 +33,8 @@ class _AppHomeState extends State<AppHome> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).bottomAppBarColor,
         title: Center(
-          child: Image.asset(
-            'logo.png',
-            width: 140,
-            package: 'baseflow_plugin_template'
-          ),
+          child: Image.asset('logo.png',
+              width: 140, package: 'baseflow_plugin_template'),
         ),
       ),
       backgroundColor: Theme.of(context).backgroundColor,
