@@ -9,24 +9,28 @@ import 'globals.dart';
 class InfoPage extends StatelessWidget {
   static ExamplePage createPage(
     String pluginName,
-    String githubURL,
-    String pubDevURL,
+    String githubUrl,
+    String pubDevUrl,
   ) {
     return new ExamplePage(
         Icons.info_outline,
         (context) => InfoPage._(
               pluginName: pluginName,
-              githubURL: githubURL,
-              pubDevURL: pubDevURL,
+              githubUrl: githubUrl,
+              pubDevUrl: pubDevUrl,
             ));
   }
 
   final String pluginName;
-  final String githubURL;
-  final String pubDevURL;
+  final String githubUrl;
+  final String pubDevUrl;
 
-  const InfoPage._({Key key, this.pluginName, this.githubURL, this.pubDevURL})
-      : super(key: key);
+  const InfoPage._({
+    Key? key,
+    required this.pluginName,
+    required this.githubUrl,
+    required this.pubDevUrl,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -64,17 +68,17 @@ class InfoPage extends StatelessWidget {
                 ),
                 _launcherRaisedButton(
                   'Find us on Github',
-                  githubURL,
+                  githubUrl,
                   context,
                 ),
                 _launcherRaisedButton(
                   'Find us on pub.dev',
-                  pubDevURL,
+                  pubDevUrl,
                   context,
                 ),
                 _launcherRaisedButton(
                   'Visit baseflow.com',
-                  baseflowURL,
+                  baseflowUrl,
                   context,
                 ),
                 const Padding(

@@ -1,7 +1,6 @@
-
 import 'package:flutter/cupertino.dart';
 
-class ExamplePage{
+class ExamplePage {
   final IconData icon;
   final WidgetBuilder pageBuilder;
 

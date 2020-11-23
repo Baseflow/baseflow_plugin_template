@@ -12,7 +12,7 @@ dependencies:
   baseflow_plugin_template:
     git:
       url: git://github.com/Baseflow/baseflow_plugin_template.git
-      ref: v1.0.0
+      ref: v2.0.0-nullsafety
 ```
 Add the assets in the yaml as well:
 
