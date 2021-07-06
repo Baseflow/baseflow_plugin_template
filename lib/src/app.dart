@@ -8,6 +8,7 @@ import 'home.dart';
 class BaseflowPluginExample extends StatelessWidget {
   final String pluginName;
   final List<ExamplePage> pages;
+  final List<Widget> appBarActions;
 
   /// [MaterialColor] to be used in the app [ThemeData]
   final MaterialColor themeMaterialColor =
@@ -19,6 +20,7 @@ class BaseflowPluginExample extends StatelessWidget {
     required String githubURL,
     required String pubDevURL,
     required this.pages,
+    this.appBarActions = const [],
   }) : super(key: key) {
     pages.add(InfoPage.createPage(pluginName, githubURL, pubDevURL));
   }
@@ -65,6 +67,7 @@ class BaseflowPluginExample extends StatelessWidget {
       home: AppHome(
         title: 'Baseflow $pluginName example app',
         pages: pages,
+        appBarActions: appBarActions,
       ),
     );
   }
