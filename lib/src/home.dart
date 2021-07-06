@@ -34,7 +34,7 @@ class _AppHomeState extends State<AppHome> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).bottomAppBarColor,
-        actions: widget.appBarActions,
+        actions: _currentPage == 0 ? widget.appBarActions : null,
         title: Center(
           child: Image.asset('logo.png',
               width: 140, package: 'baseflow_plugin_template'),
