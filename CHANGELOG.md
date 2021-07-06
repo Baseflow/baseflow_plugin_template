@@ -1,4 +1,4 @@
-## 2.1.0-nullsafety
+## 2.1.0
 
 * Added the possibility to add actions to the appbar.
 
