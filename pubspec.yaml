@@ -1,6 +1,6 @@
 name: baseflow_plugin_template
 description: A template for plugin examples
-version: 2.0.0-nullsafety
+version: 2.1.0
 author:
 homepage:
 

@@ -8,12 +8,14 @@ class AppHome extends StatefulWidget {
     Key? key,
     required this.title,
     required this.pages,
+    this.appBarActions,
   }) : super(key: key);
 
   /// The [title] of the application, which is shown in the application's
   /// title bar.
   final String title;
   final List<ExamplePage> pages;
+  final List<Widget>? appBarActions;
 
   @override
   _AppHomeState createState() => _AppHomeState();
@@ -32,6 +34,7 @@ class _AppHomeState extends State<AppHome> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).bottomAppBarColor,
+        actions: _currentPage == 0 ? widget.appBarActions : null,
         title: Center(
           child: Image.asset('logo.png',
               width: 140, package: 'baseflow_plugin_template'),
