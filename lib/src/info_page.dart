@@ -1,6 +1,5 @@
 import 'package:baseflow_plugin_template/src/page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'globals.dart';
@@ -108,8 +107,9 @@ class InfoPage extends StatelessWidget {
   }
 
   Future<void> _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    final Uri uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri);
     } else {
       throw 'Could not launch $url';
     }

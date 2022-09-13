@@ -83,6 +83,8 @@ class _AppHomeState extends State<AppHome> {
   }
 
   Color _bottomAppBarIconColor(int page) {
-    return _currentPage == page ? Colors.white : Theme.of(context).accentColor;
+    return _currentPage == page
+        ? Colors.white
+        : Theme.of(context).colorScheme.secondary;
   }
 }

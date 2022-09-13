@@ -30,7 +30,9 @@ class BaseflowPluginExample extends StatelessWidget {
     return MaterialApp(
       title: 'Baseflow $pluginName',
       theme: ThemeData(
-        accentColor: Colors.white60,
+        colorScheme: Theme.of(context).colorScheme.copyWith(
+              secondary: Colors.white60,
+            ),
         backgroundColor: const Color.fromRGBO(48, 49, 60, 0.8),
         buttonTheme: ButtonThemeData(
           buttonColor: themeMaterialColor.shade500,

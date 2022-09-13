@@ -1,3 +1,7 @@
+## 2.1.1
+
+* Replaces the deprecated `RaisedButton` with the new `ElevatedButton`.
+
 ## 2.1.0
 
 * Added the possibility to add actions to the appbar.
