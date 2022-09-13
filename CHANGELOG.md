@@ -1,6 +1,7 @@
 ## 2.1.1
 
 * Replaces the deprecated `RaisedButton` with the new `ElevatedButton`.
+* Update dependencies to latest versions.
 
 ## 2.1.0
 
