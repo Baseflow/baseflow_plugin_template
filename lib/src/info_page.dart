@@ -45,7 +45,7 @@ class InfoPage extends StatelessWidget {
               children: <Widget>[
                 Align(
                   alignment: Alignment.centerLeft,
-                  child: Image.asset('poweredByBaseflow.png',
+                  child: Image.asset('assets/poweredByBaseflow.png',
                       width: 250,
                       alignment: Alignment.centerLeft,
                       package: 'baseflow_plugin_template'),
