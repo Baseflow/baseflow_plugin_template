@@ -12,16 +12,11 @@ dependencies:
     sdk: flutter
   baseflow_plugin_template:
     path: ../
-  cupertino_icons: ^1.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
-  assets:
-    - packages/baseflow_plugin_template/logo.png
-    - packages/baseflow_plugin_template/poweredByBaseflow.png
-
   uses-material-design: true
 

@@ -36,7 +36,7 @@ class _AppHomeState extends State<AppHome> {
         backgroundColor: Theme.of(context).bottomAppBarColor,
         actions: _currentPage == 0 ? widget.appBarActions : null,
         title: Center(
-          child: Image.asset('logo.png',
+          child: Image.asset('assets/logo.png',
               width: 140, package: 'baseflow_plugin_template'),
         ),
       ),
