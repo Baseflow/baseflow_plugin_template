@@ -9,18 +9,7 @@ How to use this package:
 Add the dependency in the yaml of the example:
 ```
 dependencies:
-  baseflow_plugin_template:
-    git:
-      url: git://github.com/Baseflow/baseflow_plugin_template.git
-      ref: v2.0.0-nullsafety
-```
-Add the assets in the yaml as well:
-
-```
-flutter:
-  assets:
-    - packages/baseflow_plugin_template/logo.png
-    - packages/baseflow_plugin_template/poweredByBaseflow.png
+  baseflow_plugin_template: ^2.1.2
 ```
 
 And run the template app:

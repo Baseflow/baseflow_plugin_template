@@ -32,30 +32,32 @@ class BaseflowPluginExample extends StatelessWidget {
       theme: ThemeData(
         colorScheme: Theme.of(context).colorScheme.copyWith(
               secondary: Colors.white60,
+              background: const Color.fromRGBO(48, 49, 60, 0.8),
             ),
-        backgroundColor: const Color.fromRGBO(48, 49, 60, 0.8),
         buttonTheme: ButtonThemeData(
           buttonColor: themeMaterialColor.shade500,
           disabledColor: themeMaterialColor.withRed(200),
           splashColor: themeMaterialColor.shade50,
           textTheme: ButtonTextTheme.primary,
         ),
-        bottomAppBarColor: const Color.fromRGBO(57, 58, 71, 1),
+        bottomAppBarTheme: BottomAppBarTheme(
+          color: const Color.fromRGBO(57, 58, 71, 1),
+        ),
         hintColor: themeMaterialColor.shade500,
         primarySwatch: createMaterialColor(const Color.fromRGBO(48, 49, 60, 1)),
         textTheme: TextTheme(
-          bodyText1: TextStyle(
+          bodyLarge: TextStyle(
             color: Colors.white,
             fontSize: 16,
             height: 1.3,
           ),
-          bodyText2: TextStyle(
+          bodyMedium: TextStyle(
             color: Colors.white,
             fontSize: 18,
             height: 1.2,
           ),
-          button: TextStyle(color: Colors.white),
-          headline1: TextStyle(
+          labelLarge: TextStyle(color: Colors.white),
+          displayLarge: TextStyle(
             color: Colors.white,
             fontSize: 18,
           ),
