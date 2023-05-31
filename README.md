@@ -11,7 +11,7 @@ Add the dependency in the yaml of the example:
 dependencies:
   baseflow_plugin_template:
     git:
-      url: git://github.com/Baseflow/baseflow_plugin_template.git
+      url: https://github.com/Baseflow/baseflow_plugin_template.git
       ref: v2.0.0-nullsafety
 ```
 Add the assets in the yaml as well:
@@ -19,8 +19,8 @@ Add the assets in the yaml as well:
 ```
 flutter:
   assets:
-    - packages/baseflow_plugin_template/logo.png
-    - packages/baseflow_plugin_template/poweredByBaseflow.png
+    - packages/baseflow_plugin_template/assets/logo.png
+    - packages/baseflow_plugin_template/assets/poweredByBaseflow.png
 ```
 
 And run the template app:

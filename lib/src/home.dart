@@ -33,14 +33,14 @@ class _AppHomeState extends State<AppHome> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).bottomAppBarColor,
+        backgroundColor: Theme.of(context).bottomAppBarTheme.color,
         actions: _currentPage == 0 ? widget.appBarActions : null,
         title: Center(
           child: Image.asset('assets/logo.png',
               width: 140, package: 'baseflow_plugin_template'),
         ),
       ),
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).bottomAppBarTheme.color,
       body: PageView(
         controller: _pageController,
         children: pageWidgets,
@@ -57,7 +57,7 @@ class _AppHomeState extends State<AppHome> {
   BottomAppBar _bottomAppBar() {
     return BottomAppBar(
       elevation: 5,
-      color: Theme.of(context).bottomAppBarColor,
+      color: Theme.of(context).bottomAppBarTheme.color,
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
