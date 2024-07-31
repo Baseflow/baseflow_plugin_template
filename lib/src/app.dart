@@ -32,7 +32,7 @@ class BaseflowPluginExample extends StatelessWidget {
       theme: ThemeData(
         colorScheme: Theme.of(context).colorScheme.copyWith(
               secondary: Colors.white60,
-              background: const Color.fromRGBO(48, 49, 60, 0.8),
+              surface: const Color.fromRGBO(48, 49, 60, 0.8),
             ),
         buttonTheme: ButtonThemeData(
           buttonColor: themeMaterialColor.shade500,

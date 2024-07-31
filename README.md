@@ -7,12 +7,14 @@ A template for plugin examples
 How to use this package:
 
 Add the dependency in the yaml of the example:
+
 ```
 dependencies:
   baseflow_plugin_template: ^2.1.2
 ```
 
 And run the template app:
+
 ```dart
   runApp(BaseflowPluginExample(
     pluginName: 'test plugin',

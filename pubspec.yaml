@@ -1,16 +1,16 @@
 name: baseflow_plugin_template
 description: A template for plugin examples
-version: 2.1.2
+version: 2.2.0
 repository: https://github.com/Baseflow/baseflow_plugin_template
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
-  flutter: ">=2.8.0"
+  sdk: ^3.3.0
+  flutter: '>=3.19.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  url_launcher: ^6.1.5
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:

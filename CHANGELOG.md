@@ -1,3 +1,7 @@
+## 2.2.0
+
+Update Dart to 3.3.0.
+
 ## 2.1.2
 
 * Fixes url launch configuration in example on Android.
