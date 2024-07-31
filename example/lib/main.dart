@@ -15,11 +15,11 @@ class CenteredText extends StatelessWidget {
     return ExamplePage(Icons.text_fields, (context) => const CenteredText());
   }
 
-  const CenteredText();
+  const CenteredText({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text('Very simple example'),
     );
   }

@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 /// A Flutter example demonstrating how the [pluginName] plugin could be used
 class AppHome extends StatefulWidget {
   /// Constructs the [AppHome] class
-  AppHome({
-    Key? key,
+  const AppHome({
+    super.key,
     required this.title,
     required this.pages,
     this.appBarActions,
-  }) : super(key: key);
+  });
 
   /// The [title] of the application, which is shown in the application's
   /// title bar.
@@ -18,7 +18,7 @@ class AppHome extends StatefulWidget {
   final List<Widget>? appBarActions;
 
   @override
-  _AppHomeState createState() => _AppHomeState();
+  State createState() => _AppHomeState();
 }
 
 class _AppHomeState extends State<AppHome> {

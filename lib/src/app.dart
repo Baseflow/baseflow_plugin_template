@@ -15,13 +15,13 @@ class BaseflowPluginExample extends StatelessWidget {
       createMaterialColor(const Color.fromRGBO(48, 49, 60, 1));
 
   BaseflowPluginExample({
-    Key? key,
+    super.key,
     required this.pluginName,
     required String githubURL,
     required String pubDevURL,
     required this.pages,
     this.appBarActions,
-  }) : super(key: key) {
+  }) {
     pages.add(InfoPage.createPage(pluginName, githubURL, pubDevURL));
   }
 
@@ -40,12 +40,12 @@ class BaseflowPluginExample extends StatelessWidget {
           splashColor: themeMaterialColor.shade50,
           textTheme: ButtonTextTheme.primary,
         ),
-        bottomAppBarTheme: BottomAppBarTheme(
-          color: const Color.fromRGBO(57, 58, 71, 1),
+        bottomAppBarTheme: const BottomAppBarTheme(
+          color: Color.fromRGBO(57, 58, 71, 1),
         ),
         hintColor: themeMaterialColor.shade500,
         primarySwatch: createMaterialColor(const Color.fromRGBO(48, 49, 60, 1)),
-        textTheme: TextTheme(
+        textTheme: const TextTheme(
           bodyLarge: TextStyle(
             color: Colors.white,
             fontSize: 16,

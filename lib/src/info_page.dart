@@ -11,7 +11,7 @@ class InfoPage extends StatelessWidget {
     String githubUrl,
     String pubDevUrl,
   ) {
-    return new ExamplePage(
+    return ExamplePage(
         Icons.info_outline,
         (context) => InfoPage._(
               pluginName: pluginName,
@@ -25,11 +25,10 @@ class InfoPage extends StatelessWidget {
   final String pubDevUrl;
 
   const InfoPage._({
-    Key? key,
     required this.pluginName,
     required this.githubUrl,
     required this.pubDevUrl,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
