@@ -4,7 +4,7 @@ version: 2.2.0
 repository: https://github.com/Baseflow/baseflow_plugin_template
 
 environment:
-  sdk: ^3.3.0
+  sdk: ^3.0.0
   flutter: '>=3.19.0'
 
 dependencies:

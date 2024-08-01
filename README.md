@@ -8,9 +8,9 @@ How to use this package:
 
 Add the dependency in the yaml of the example:
 
-```
+```yaml
 dependencies:
-  baseflow_plugin_template: ^2.1.2
+  baseflow_plugin_template: ^2.2.0
 ```
 
 And run the template app:

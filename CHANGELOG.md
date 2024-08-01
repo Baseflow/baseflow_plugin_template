@@ -1,6 +1,6 @@
 ## 2.2.0
 
-Update Dart to 3.3.0.
+Update Dart to 3.0.0.
 
 ## 2.1.2
 
