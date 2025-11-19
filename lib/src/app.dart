@@ -40,7 +40,7 @@ class BaseflowPluginExample extends StatelessWidget {
           splashColor: themeMaterialColor.shade50,
           textTheme: ButtonTextTheme.primary,
         ),
-        bottomAppBarTheme: const BottomAppBarTheme(
+        bottomAppBarTheme: const BottomAppBarThemeData(
           color: Color.fromRGBO(57, 58, 71, 1),
         ),
         hintColor: themeMaterialColor.shade500,
