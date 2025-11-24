@@ -40,7 +40,7 @@ class BaseflowPluginExample extends StatelessWidget {
           splashColor: themeMaterialColor.shade50,
           textTheme: ButtonTextTheme.primary,
         ),
-        bottomAppBarTheme: const BottomAppBarTheme(
+        bottomAppBarTheme: const BottomAppBarThemeData(
           color: Color.fromRGBO(57, 58, 71, 1),
         ),
         hintColor: themeMaterialColor.shade500,
@@ -80,7 +80,9 @@ class BaseflowPluginExample extends StatelessWidget {
   static MaterialColor createMaterialColor(Color color) {
     var strengths = <double>[.05];
     var swatch = <int, Color>{};
-    final r = color.red, g = color.green, b = color.blue;
+    final int r = (color.r * 255.0).round() & 0xff;
+    final int g = (color.g * 255.0).round() & 0xff;
+    final int b = (color.b * 255.0).round() & 0xff;
 
     for (var i = 1; i < 10; i++) {
       strengths.add(0.1 * i);
@@ -94,6 +96,6 @@ class BaseflowPluginExample extends StatelessWidget {
         1,
       );
     }
-    return MaterialColor(color.value, swatch);
+    return MaterialColor(color.toARGB32(), swatch);
   }
 }
